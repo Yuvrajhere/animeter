@@ -1,8 +1,5 @@
-# Habbit Web App
+# Animeter Web App
 [Website](https://habbit.co.in) - [Jenkins](https://jenkins.habbit.live) - [Spinnaker](https://spinnaker.habbit.live)
-
-[![codecov-coverage](https://codecov.io/gh/habbit-tech/habbit-webapp/branch/main/graph/badge.svg?token=TR0QG39ADU)](https://codecov.io/gh/habbit-tech/habbit-webapp)
-![CI Tests](https://github.com/habbit-tech/habbit-webapp/actions/workflows/tests.yaml/badge.svg)
 
 This repository contains the source code for the Habbit Web Application.
 
