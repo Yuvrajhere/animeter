@@ -30,7 +30,7 @@ const AnimeCard = ({
           }
         )
         .then((res) => {
-          console.log("Res", res);
+          // console.log("Res", res);
           setRating(res.data.data);
         })
         .catch((err) => {

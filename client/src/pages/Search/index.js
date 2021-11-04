@@ -39,7 +39,7 @@ const Search = () => {
         }
       )
       .then((res) => {
-        console.log("Res", res);
+        // console.log("Res", res);
         setPageNo((prev) => prev + 1);
         setError("");
         setAnimeList((prev) => [...prev, ...res.data.data.documents]);
@@ -53,7 +53,7 @@ const Search = () => {
         setIsLoading(true);
         axios
           .get(
-            `${process.env.REACT_APP_ANI_API_URI}anime?${searchBy}=${searchTerm}&page=${pageNo}`,
+            `${process.env.REACT_APP_ANI_API_URI}anime?${searchBy}=${searchTerm}&page=1`,
             {
               headers: {
                 Authorization: `Bearer ${process.env.REACT_APP_ANI_API_KEY}`,
@@ -61,7 +61,7 @@ const Search = () => {
             }
           )
           .then((res) => {
-            console.log("Res", res);
+            // console.log("Res", res);
             if (res.data.data === "" && res.data.status_code === 404) {
               setError("No Animes Found!");
             } else {
@@ -79,9 +79,7 @@ const Search = () => {
     }, 500);
 
     return () => clearTimeout(delayDebounceFn);
-  }, [searchTerm, searchBy, pageNo]);
-
-  console.log(animeList);
+  }, [searchTerm, searchBy]);
 
   return (
     <div className="Search">

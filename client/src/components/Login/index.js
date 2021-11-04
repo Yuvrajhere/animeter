@@ -49,7 +49,7 @@ const Login = () => {
         password: formData.password,
       })
       .then((res) => {
-        console.log("Res", res);
+        // console.log("Res", res);
         localStorage.setItem("token", res.data.token);
         setIsLoading(false);
         window.location.reload(false)

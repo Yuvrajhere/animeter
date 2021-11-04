@@ -63,7 +63,7 @@ const Anime = () => {
         }
       )
       .then((res) => {
-        console.log("Res", res);
+        // console.log("Res", res);
         setIsLoading(false);
         window.location.reload(false);
       })
@@ -92,7 +92,7 @@ const Anime = () => {
           },
         })
         .then((res) => {
-          console.log("Res", res);
+          // console.log("Res", res);
           if (res.data.status_code === 404) {
             history.push("/");
           } else {
@@ -113,7 +113,7 @@ const Anime = () => {
           },
         })
         .then((res) => {
-          console.log("Res", res);
+          // console.log("Res", res);
           if (res.data.status_code === 404) {
             history.push("/");
           } else {

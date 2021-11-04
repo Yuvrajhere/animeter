@@ -57,7 +57,7 @@ const Signup = () => {
         username: formData.username,
       })
       .then((res) => {
-        console.log("Res", res);
+        // console.log("Res", res);
         setIsLoading(false);
         history.push("/auth/login");
       })
