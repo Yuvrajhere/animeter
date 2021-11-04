@@ -7,17 +7,21 @@ https://youtu.be/doEiMNBT0Vk
 This repository contains the source code for the Animeter Web Application.
 
 ## Setup
-
+Clone the Repository
 ```
-git clone https://github.com/habbit-tech/habbit-webapp
-cd habbit-webapp
-yarn
+git clone https://github.com/Yuvrajhere/animeter.git
 ```
 
-## Development Server
-
+Start Backend Development Server
+```cd animeter
+npm install
+npm start
 ```
-yarn dev
+
+Start Frontend Development Server
+```cd animeter/client
+npm install
+npm start
 ```
 
 ## References
