@@ -36,8 +36,8 @@ const AnimeCard = ({
         .catch((err) => {
           console.log("Err", err.response);
           if (
-            err?.response?.status == 401 &&
-            err?.response?.data.isTokenExpired == true
+            err?.response?.status === 401 &&
+            err?.response?.data.isTokenExpired === true
           ) {
             localStorage.removeItem("token");
             window.location.reload(false);
@@ -51,7 +51,7 @@ const AnimeCard = ({
   return (
     <div className="AnimeCard">
       <div className="front-card">
-        <img src={cover} />
+        <img src={cover} alt="cover" />
         <p>{title.length > 50 ? title.slice(0, 49) + "..." : title}</p>
       </div>
       <div className="back-card">

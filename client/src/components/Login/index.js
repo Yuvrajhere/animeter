@@ -6,7 +6,7 @@ import Button from "../Button";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const loginSchema = yup.object().shape({
@@ -26,8 +26,6 @@ const loginSchema = yup.object().shape({
 });
 
 const Login = () => {
-  let history = useHistory();
-
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -65,7 +63,7 @@ const Login = () => {
 
   return (
     <div className="Login">
-      <img src={pikachuImage} />
+      <img src={pikachuImage} alt="Pikachu" />
       <div>
         <h1>
           <span>Login</span>

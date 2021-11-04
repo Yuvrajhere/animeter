@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Anime from "./pages/Anime";
 import Auth from "./pages/Auth";

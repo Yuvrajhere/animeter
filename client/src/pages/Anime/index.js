@@ -33,8 +33,6 @@ const Anime = () => {
   const [reviewData, setReviewData] = useState(null)
   const [isLoading, setIsLoading] = useState(false);
 
-  const reviews = [1, 2, 3, 4];
-
   const [error, setError] = useState(false);
 
   const {
@@ -72,8 +70,8 @@ const Anime = () => {
       .catch((err) => {
         console.log("Err", err.response);
         if (
-          err?.response?.status == 401 &&
-          err?.response?.data.isTokenExpired == true
+          err?.response?.status === 401 &&
+          err?.response?.data.isTokenExpired === true
         ) {
           localStorage.removeItem("token");
           window.location.reload(false);
@@ -103,7 +101,7 @@ const Anime = () => {
           setIsLoading(false);
         });
     }
-  }, [animeId]);
+  }, [animeId, history]);
 
   useEffect(() => {
     if (animeId) {
@@ -126,8 +124,8 @@ const Anime = () => {
         .catch((err) => {
           console.log("Err", err.response);
           if (
-            err?.response?.status == 401 &&
-            err?.response?.data.isTokenExpired == true
+            err?.response?.status === 401 &&
+            err?.response?.data.isTokenExpired === true
           ) {
             localStorage.removeItem("token");
             window.location.reload(false);
@@ -137,7 +135,7 @@ const Anime = () => {
           setIsLoading(false);
         });
     }
-  }, [animeId]);
+  }, [animeId, history]);
 
   return (
     <div className="Anime">
@@ -153,7 +151,7 @@ const Anime = () => {
                 boxShadow: `inset 1px 0px 100px 1px ${animeData.cover_color}`,
               }}
             ></div>
-            <img src={animeData.banner_image} />
+            <img src={animeData.banner_image} alt="banner" />
           </div>
           <div
             style={{
@@ -168,6 +166,7 @@ const Anime = () => {
                   border: `1px solid ${animeData.cover_color}`,
                 }}
                 src={animeData.cover_image}
+                alt="cover"
               />
               <a
                 href={animeData.trailer_url}

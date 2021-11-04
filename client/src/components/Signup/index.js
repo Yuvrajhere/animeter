@@ -113,7 +113,7 @@ const Signup = () => {
           Already have an account? <Link to="/auth/login">Login</Link>
         </p>
       </div>
-      <img src={kakashiImage} />
+      <img src={kakashiImage} alt="Kakashi" />
     </div>
   );
 };

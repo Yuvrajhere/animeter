@@ -6,7 +6,6 @@ import Loading from "../../components/Loading";
 import pokemonSadImage from "../../assets/pokemon-sad-1.png";
 import animeSaluteImage from "../../assets/anime-salute-1.png";
 
-
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [animeList, setAnimeList] = useState([]);
@@ -80,7 +79,7 @@ const Search = () => {
     }, 500);
 
     return () => clearTimeout(delayDebounceFn);
-  }, [searchTerm, searchBy]);
+  }, [searchTerm, searchBy, pageNo]);
 
   console.log(animeList);
 
@@ -112,7 +111,7 @@ const Search = () => {
           </div>
         ) : error ? (
           <div className="error">
-            <img src={pokemonSadImage} />
+            <img src={pokemonSadImage} alt="sad pokemon" />
             <p>{error}</p>
           </div>
         ) : (
@@ -154,7 +153,7 @@ const Search = () => {
         )
       ) : (
         <div className="no-search">
-          <img src={animeSaluteImage} />
+          <img src={animeSaluteImage} alt="anime saluting" />
           <p>Start Searching to see results</p>
         </div>
       )}
