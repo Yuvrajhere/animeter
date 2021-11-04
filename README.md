@@ -32,7 +32,7 @@ Animeter is a Web Application which has features like Signup, login, searching a
 - [Database - MongoDB Atlas](https://docs.atlas.mongodb.com/)
 
 ## Video Recording
-https://youtu.be/doEiMNBT0Vk
+https://www.youtube.com/watch?v=doEiMNBT0Vk
 
 ## Setup
 Clone the Repository
