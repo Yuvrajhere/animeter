@@ -34,6 +34,8 @@ Animeter is a Web Application which has features like Signup, login, searching a
 ## Video Recording
 https://www.youtube.com/watch?v=doEiMNBT0Vk
 
+https://www.youtube.com/embed/doEiMNBT0Vk
+
 ## Setup
 Clone the Repository
 ```
