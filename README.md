@@ -41,13 +41,15 @@ git clone https://github.com/Yuvrajhere/animeter.git
 ```
 
 Start Backend Development Server
-```cd animeter
+```
+cd animeter
 npm install
 npm start
 ```
 
 Start Frontend Development Server
-```cd animeter/client
+```
+cd animeter/client
 npm install
 npm start
 ```
