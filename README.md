@@ -26,7 +26,7 @@ Animeter is a Web Application which has features like Signup, login, searching a
 ### Database
 - [MongoDB](https://www.mongodb.com/)
 
-### Hosted
+### Hosting
 - [Frontend - Vercel](https://vercel.com/)
 - [Backend - Heroku](https://heroku.com/)
 - [Database - MongoDB Atlas](https://docs.atlas.mongodb.com/)
