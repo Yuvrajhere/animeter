@@ -1,26 +1,7 @@
 # Animeter Web App
-[Website](https://habbit.co.in) - [Jenkins](https://jenkins.habbit.live) - [Spinnaker](https://spinnaker.habbit.live)
+[Frontend](https://animeter.vercel.app/) - [Backend](https://animeter.herokuapp.com/)
 
-This repository contains the source code for the Habbit Web Application.
-
-## Build & Deployment
-
-
---> Devs 
-
---> Push to `main` branch 
-  
---> [Jenkins Build](https://jenkins.habbit.live) (same creds as Django Dashboard) 
-  
---> Push Image to AWS ECR 
-  
---> [Spinnaker Deployment Pipeline](https://spinnaker.habbit.live) (login via github)
-  
-      - Test and verify change in staging env
-      - Approve/Reject deployment to prod
-      
---> `If` approved `then` changes pushed to PROD `else` deployment terminates 
-
+This repository contains the source code for the Animeter Web Application.
 
 ## Setup
 
@@ -34,30 +15,6 @@ yarn
 
 ```
 yarn dev
-```
-
-## Storybook
-
-```
-yarn storybook
-```
-
-## Test
-
-```
-yarn test
-```
-
-### Coverage
-
-```
-yarn test:coverage
-```
-
-## Lint
-
-```
-yarn lint
 ```
 
 ## References
