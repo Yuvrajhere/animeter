@@ -41,8 +41,6 @@ const Login = () => {
     resolver: yupResolver(loginSchema),
   });
 
-  console.log(watch, setValue, reset)
-
   const handleFormSubmit = (formData) => {
     setIsLoading(true);
     axios

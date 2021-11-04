@@ -48,8 +48,6 @@ const Signup = () => {
     resolver: yupResolver(signupSchema),
   });
 
-  console.log(watch, setValue, reset)
-
   const handleFormSubmit = (formData) => {
     setIsLoading(true);
     axios
