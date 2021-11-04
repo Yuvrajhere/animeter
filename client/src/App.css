@@ -10,9 +10,9 @@ a {
   text-decoration: none;
 }
 
-/* button:hover, a:hover {
-  opacity: 85%;
-} */
+button:hover, a:hover {
+  opacity: 0.8;
+}
 
 input:focus, select:focus, textarea:focus {
   outline: none;
