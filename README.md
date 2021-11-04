@@ -2,7 +2,7 @@
 [Frontend](https://animeter.vercel.app/) - [Backend](https://animeter.herokuapp.com/)
 
 ## Video Recording
-https://www.canva.com/design/DAEuv-f7ODM/06NPUlKq7X6JqwBDFqyIoA/watch?utm_content=DAEuv-f7ODM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+https://youtu.be/doEiMNBT0Vk
 
 This repository contains the source code for the Animeter Web Application.
 
