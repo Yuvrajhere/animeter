@@ -47,6 +47,8 @@ const Anime = () => {
     resolver: yupResolver(reviewSchema),
   });
 
+  console.log(watch, setValue, reset)
+
   const handleFormSubmit = (formData) => {
     setIsLoading(true);
     axios
