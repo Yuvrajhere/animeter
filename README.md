@@ -13,7 +13,7 @@ Animeter is a Web Application which has features like Signup, login, searching a
 - [React Router](https://reactrouter.com/)
 - [React Hook Form](https://react-hook-form.com/)
 - [Yup](https://www.npmjs.com/package/yup)
-- [Axios](https://axios-http.com/)\
+- [Axios](https://axios-http.com/)
 - [React Icons](https://react-icons.github.io/react-icons)
 
 ### Backend
@@ -51,12 +51,3 @@ Start Frontend Development Server
 npm install
 npm start
 ```
-
-## References
-
--   [Nextjs](https://nextjs.org/docs/getting-started)
--   [SWR](https://swr.vercel.app/)
--   [Doc Comments](https://tsdoc.org/)
--   [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
--   [React Style Guide](https://www.thenewboston.com/style-guide/react) & [SCSS Style Guide](https://www.thenewboston.com/style-guide/css)
--   [Linting Setup](https://robertcooper.me/post/using-eslint-and-prettier-in-a-typescript-project)
