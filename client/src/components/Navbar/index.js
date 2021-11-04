@@ -28,7 +28,7 @@ const Navbar = () => {
       </Link>
       {showUser && (
         <div className="right">
-          <p>Welcome, Yuvraj</p>
+          <p>Welcome, User</p>
           <Button onClick={handleLogout} type="red">
             Logout
           </Button>
